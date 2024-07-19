@@ -1,0 +1,182 @@
+:root {
+  --giraffe-color: purple;
+  --standard-opacity: 0.75;
+  --accent-brown: rgb(171, 86, 0);
+  --accent-blue:rgba(0, 58, 128, 0.685);
+}
+body {
+  background-color: darkblue;
+  display: inline-flex;
+  background: rgb(1, 13, 42);
+    background-blend-mode:color-dodge;
+    background-image: url(https://img.freepik.com/free-vector/modern-animal-print-patterns-collection_23-2148680465.jpg);
+}
+/* By putting section here as well, it automatically makes the boxes (which are transparent) and thus auto piles them up for me later on */
+section{
+    background: rgba(0, 55, 255, 0.403);
+    padding: 0.5em;
+    border-radius: 5px;
+}
+h1 {
+font-family: Tahoma;
+  text-decoration: underline;
+  text-align: center;
+  text-shadow: 1pt 1px 0px rgb(7, 57, 57), 1pt 2px 0px aqua,
+    1px 0 4pt rgb(0, 255, 85), 2px 0 1rem rgb(0, 255, 85);
+  color: rgb(255, 217, 0);
+  border: rgb(240, 255, 248);
+  /* font: 4.5em "System"; */
+}
+h2 {
+    font-family: Tahoma;
+  text-decoration: underline;
+  text-align: center;
+  text-shadow: 1pt 1px 0px rgb(7, 57, 57), 1pt 2px 0px aqua,
+    1px 0 4pt rgb(0, 255, 85), 2px 0 1rem rgb(0, 255, 85);
+  color: gold;
+  border: rgb(240, 255, 248);
+
+  /* font: 4.5em "System"; */
+}
+h3 {
+    font-family: Tahoma;
+  text-decoration: underline;
+  text-align: center;
+  text-shadow: 1px 1.3px  rgb(0, 0, 0);
+  color:gold;
+  border: rgb(240, 255, 248);
+  /* font: 4.5em "System"; */
+}
+p{
+    font-size: 1.em;
+    color: rgb(255, 217, 0);
+    text-shadow: 0.2pt 0.2px 0px rgb(173, 130, 1);;
+  }
+
+
+
+
+@counter-style custom {
+  system: cyclic;
+  symbols: ☙ ❥;
+}
+
+ul {
+  outline: 0.5em ridge rgba(171, 137, 0, 0.663);
+  border-radius: 5%;
+  list-style: custom;
+  background: linear-gradient( in oklab , rgb(234, 230, 170),rgb(0, 223, 85));
+    padding: 5%;
+  display: inline-flex;
+  flex-direction: column;
+  flex: 1 2;
+  gap: 2em;
+}
+
+.ZooIntro {
+    section{outline: 9px ridge rgb(86, 171, 0);}
+    text-align: center;
+    padding:  1.75em;
+    outline: 0.5em ridge rgb(171, 137, 0);
+    border-radius: 5%;
+    background: rgba(177, 108, 5);
+    background-blend-mode:multiply;
+    background-image: url("https://media.freestocktextures.com/cache/f2/1f/f21f976cf799e1489476c91da712289a.jpg");
+    padding: 5%;
+    h1 {
+        font-size: 5em;
+    }
+    h2{font-size: 1.5em;}
+
+}
+/* box style for nav and  header */
+.SimpleInfoBox
+{
+    background-color: rgba(0, 128, 0, 0.681);
+    outline: 9px ridge rgb(86, 171, 0);
+    border-radius: 25% 25% 5%  5% ;
+    flex-direction: column;
+    gap: 15%;
+    border-radius: 25%;
+    padding: 3%;
+    margin: 30px;
+}
+/* box style for species header */
+.speciesHeader{  background: linear-gradient( in oklab , rgb(234, 230, 170),rgb(0, 223, 85));
+    padding: 3%;
+    outline: 0.3em ridge rgb(86, 171, 0);
+    border-radius: 3%;
+    font-size: 100%;
+}
+/* box style for href links */
+.transparentLink{
+
+    h3{    scale: 75%;
+        background: linear-gradient( in oklab , rgba(255, 240, 24, 0.508),rgba(0, 223, 86, 0.144));
+        padding: 3%;
+        outline: 0.3em ridge rgb(86, 171, 0);
+        border-radius: 3%;}
+}
+
+.blurb {
+/* style for animal blurbs */
+  outline: 0.5em ridge rgb(85, 171, 0);
+  border-radius: 3%;
+  background: rgba(0, 55, 255, 0.403);
+  padding: 1.5em;
+  gap: 20px;
+  display: block;
+  columns: 2;
+  h1 {
+    font-size: 2em;
+    text-decoration: underline;
+    text-shadow: 1pt 1px 0px rgb(7, 57, 57), 1pt 2px 0px aqua,
+      1px 0 4pt rgb(0, 255, 85), 2px 0 1rem rgb(0, 255, 85);
+    color: rgb(255, 247, 0);
+    border: rgb(240, 255, 248);
+    position: absolute;
+    bottom: -30px;
+    outline: 0.2em ridge rgb(22, 117, 1);
+    background-color: rgba(0, 51, 255, 0.429);
+    border-radius: 5%;
+    padding: 15px;
+    
+    
+  }
+
+  p{
+    overflow: auto;
+  }
+    /* style for left section */
+  section {
+    display: flex;
+    flex: 2 1;
+    position: relative;
+    background-color: rgb(33, 66, 12);
+    
+
+  }
+  /* style for right section */
+  section:last-of-type {
+    display: block;
+    border: 1px solid greenyellow;
+    outline: 0.3em ridge rgb(171, 91, 0);
+    border-radius: 5%;
+    padding: 3%;
+    height: 235px;
+
+    
+
+  }
+
+  img {
+    height: 250px;
+    width: 250px;
+    outline: 0.3em ridge rgb(171, 91, 0);
+    border-radius: 5%;
+  }
+  
+  /* some gradients toyed with and saved for later use potentially */
+  /* background: linear-gradient( in oklab , rgb(234, 230, 170),rgb(0, 223, 85)); */
+  /* background: linear-gradient( in oklab , rgb(170, 215, 234,1), rgba(0, 55, 255, 0)); */
+}
